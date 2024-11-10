@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -588,12 +588,20 @@ video {
   }
 }
 
-.invisible {
-  visibility: hidden;
+.z-10 {
+  z-index: 10;
 }
 
 .m-4 {
   margin: 1rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-auto {
@@ -603,6 +611,18 @@ video {
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .flex {
@@ -617,16 +637,64 @@ video {
   display: none;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-screen {
   height: 100vh;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-2\/6 {
+  height: 33.333333%;
+}
+
+.h-4\/6 {
+  height: 66.666667%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-max {
@@ -634,8 +702,28 @@ video {
   max-width: max-content;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -662,12 +750,37 @@ video {
   justify-content: space-between;
 }
 
-.text-wrap {
-  text-wrap: wrap;
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-0 {
+  gap: 0px;
 }
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .border-none {
@@ -677,6 +790,11 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
 .bg-red-500 {
@@ -698,8 +816,49 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-4 {
@@ -719,6 +878,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .text-3xl {
@@ -756,8 +919,17 @@ video {
     position: static;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mr-auto {
+    margin-right: auto;
   }
 
   .md\:flex {
@@ -772,6 +944,26 @@ video {
     width: 16.666667%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-screen {
+    width: 100vw;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
+  .md\:w-2\/6 {
+    width: 33.333333%;
+  }
+
+  .md\:w-3\/6 {
+    width: 50%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -780,12 +972,21 @@ video {
     align-items: center;
   }
 
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
   .md\:gap-6 {
     gap: 1.5rem;
   }
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:bg-green-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(134 239 172 / var(--tw-bg-opacity));
   }
 
   .md\:py-0 {

@@ -3,6 +3,7 @@ const menu = document.querySelector('#menu');
 const inputfield = document.getElementById('search-input');
 let character = inputfield.placeholder;
 const url = `https://api.unsplash.com/search/photos?page=1&client_id=2TMZt136qJJby3z1aUwzpcwPOd-WA_ENITeJ_br5oxE&query=${character}`;
+let display = document.getElementById("display")
 
 button.addEventListener('click',()=>{
     menu.classList.toggle('hidden')
@@ -30,7 +31,8 @@ async function displayImages(charactertyped){
         const {urls} = object;
         return `
         <div class = "container">
-        <img src = ${object.urls.small}>
+        <img class = "h-auto max-w-full rounded-lg" src = ${object.urls.regular} alt = ${object.alt_description}>
+        <p class ="bg-white rounded-lg mt-2">${object.alt_description}</p>
         </div>
         `
     }).join("");
