@@ -7,7 +7,7 @@ I also used tailwind css for the styling , look at the index.html file class nam
 ## Table of Contents
 -[installation](#Installation)
 -[usage](#Usage)
--[project-structure](#Project-Structure)
+-[Link](#Link)
 -[Licence](#licence)
 
 
@@ -24,14 +24,8 @@ To start the project:
 npm start
 When you run npm start it executes the start script within the scripts section of your package.json fiel
 
-## Project-structure
-image-search/
-│
-├── dist       # holds the html,css and js files
-├── node_modules       # Stylesheet for your landing page
-├── src        # imports tailwind framework
-├── README.md        # Project README file
-└── LICENSE          # License file (MIT or other)
+## Link
+ https://ifyunaiya.github.io/image-search/
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
